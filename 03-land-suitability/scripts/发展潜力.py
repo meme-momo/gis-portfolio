@@ -4,10 +4,10 @@ import os
 # ================== 配置 ==================
 
 # 之前生成的统计结果Excel
-input_excel = r"F:\gt\result\油茶适宜性统计结果_论文比例版.xlsx"
+input_excel = r"gt\result\油茶适宜性统计结果_论文比例版.xlsx"
 
 # 输出目录
-output_dir = r"F:\gt\result"
+output_dir = r"gt\result"
 
 # 论文中的已种植面积和规划新增面积（万hm²）
 # 数据来源：论文表5

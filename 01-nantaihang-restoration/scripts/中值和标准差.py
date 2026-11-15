@@ -48,7 +48,7 @@ def results_to_dataframe(results):
     return df
 
 def main():
-    root_folder = r"F:\dasai\南太行数据"  # 修改为你的路径
+    root_folder = r"dasai\南太行数据"  # 修改为你的路径
     output_excel = os.path.join(root_folder, "统计结果.xlsx")
 
     folders = {

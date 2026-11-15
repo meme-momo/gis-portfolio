@@ -10,17 +10,17 @@ import os
 # ================== 配置 ==================
 
 # 数据路径
-climate_path = r"F:\gt\processed_climate_data\裁剪后\climate_combined_suitability.tif"
-soil_path = r"F:\gt\processed_final\soil_resampled.tif"
-terrain_path = r"F:\gt\processed_final\terrain_resampled.tif"
-combined_path = r"F:\gt\processed_final\combined_suitability.tif"
-vector_path = r"F:\gt\shp\quyu.shp"
+climate_path = r"gt\processed_climate_data\裁剪后\climate_combined_suitability.tif"
+soil_path = r"gt\processed_final\soil_resampled.tif"
+terrain_path = r"gt\processed_final\terrain_resampled.tif"
+combined_path = r"gt\processed_final\combined_suitability.tif"
+vector_path = r"gt\shp\quyu.shp"
 
 # GEE导出的可利用地栅格
-usable_land_path = r"F:\gt\fuxian\MyProject2\usable_land_paper_ratio.tif"
+usable_land_path = r"gt\fuxian\MyProject2\usable_land_paper_ratio.tif"
 
 # 输出目录
-output_dir = r"F:\gt\result"
+output_dir = r"gt\result"
 os.makedirs(output_dir, exist_ok=True)
 
 class_dir = os.path.join(output_dir, "分级栅格_论文比例版")

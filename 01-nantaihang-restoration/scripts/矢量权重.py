@@ -14,8 +14,8 @@ os.environ["PYTHONIOENCODING"] = "utf-8"
 
 # 输入参数
 shp_paths = {
-    "适生林地占比": r"F:\dasai\南太行数据\矿山治理区\适生林地占比\渔网结果.shp",
-    "地面沉降率": r"F:\dasai\南太行数据\矿山治理区\地面沉降率\渔网结果.shp"
+    "适生林地占比": r"dasai\南太行数据\矿山治理区\适生林地占比\渔网结果.shp",
+    "地面沉降率": r"dasai\南太行数据\矿山治理区\地面沉降率\渔网结果.shp"
 }
 
 weights = {
@@ -23,11 +23,11 @@ weights = {
     "地面沉降率": 0.192761
 }
 
-standard_raster = r"F:\dasai\ESV(1.21)\栅格分区\矿山治理区.tif"
+standard_raster = r"dasai\ESV(1.21)\栅格分区\矿山治理区.tif"
 
 output_folders = {
-    "适生林地占比": r"F:\dasai\南太行数据\矿山治理区\适生林地占比\权重",
-    "地面沉降率": r"F:\dasai\南太行数据\矿山治理区\地面沉降率\权重"
+    "适生林地占比": r"dasai\南太行数据\矿山治理区\适生林地占比\权重",
+    "地面沉降率": r"dasai\南太行数据\矿山治理区\地面沉降率\权重"
 }
 
 def clear_folder(path):

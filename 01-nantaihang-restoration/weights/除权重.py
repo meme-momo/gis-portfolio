@@ -6,9 +6,9 @@ import re
 arcpy.CheckOutExtension("Spatial")
 
 # === 你需要修改这几个路径 ===
-input_folder = r"F:\dasai\南太行数据\水生态保护区\土壤保持"           # 原始栅格文件夹
-output_folder = r"F:\dasai\南太行数据\水生态保护区\土壤保持\标准化"     # 输出文件夹
-mask_raster = r"F:\dasai\ESV(1.21)\栅格分区\水生态保护区1.tif"  # 参考栅格，用于保持范围和掩膜一致
+input_folder = r"dasai\南太行数据\水生态保护区\土壤保持"           # 原始栅格文件夹
+output_folder = r"dasai\南太行数据\水生态保护区\土壤保持\标准化"     # 输出文件夹
+mask_raster = r"dasai\ESV(1.21)\栅格分区\水生态保护区1.tif"  # 参考栅格，用于保持范围和掩膜一致
 
 # 统一的权重数值（非栅格）
 weight_value =0.058077

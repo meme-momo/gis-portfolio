@@ -7,15 +7,15 @@ import os
 
 # ================== 配置参数 ==================
 # 1. 数据路径
-hwds_folder = r"F:\gt\基于世界土壤数据库（HWSD）的中国土壤数据集(v1.1)（2009）\HWSD_China_Subset_v1.1"
+hwds_folder = r"gt\基于世界土壤数据库（HWSD）的中国土壤数据集(v1.1)（2009）\HWSD_China_Subset_v1.1"
 raster_path = os.path.join(hwds_folder, "HWSD_China_Albers.img")   # 或 HWSD_China_Geo.img
 mdb_path = os.path.join(hwds_folder, "HWSD.mdb")                   # 属性数据库
 
 # 2. 矢量边界路径（用户提供的7省或研究区边界，支持 .shp / .geojson）
-vector_path = r"F:\gt\shp\quyu.shp"   # 请改为你的实际文件路径
+vector_path = r"gt\shp\quyu.shp"   # 请改为你的实际文件路径
 
 # 3. 输出文件夹
-output_dir = r"F:\gt\processed_soil_data"
+output_dir = r"gt\processed_soil_data"
 os.makedirs(output_dir, exist_ok=True)
 
 # ================== 辅助函数 ==================

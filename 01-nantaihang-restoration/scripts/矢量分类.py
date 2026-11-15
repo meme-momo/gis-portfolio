@@ -8,16 +8,16 @@ from arcpy.sa import *
 from tqdm import tqdm  # 用于显示进度条
 
 # 设置工作环境
-arcpy.env.workspace = r"F:\dasai\南太行数据\总权重\矢量"
+arcpy.env.workspace = r"dasai\南太行数据\总权重\矢量"
 arcpy.env.overwriteOutput = True  # 允许覆盖现有输出
 
 # 定义输入和输出路径
-input_folder = r"F:\dasai\南太行数据\总权重\矢量"
-output_folder = r"F:\dasai\南太行数据\总权重\矢量\功能区"
+input_folder = r"dasai\南太行数据\总权重\矢量"
+output_folder = r"dasai\南太行数据\总权重\矢量\功能区"
 mask_rasters = [
-    r"F:\dasai\ESV(1.21)\栅格分区\矿山治理区.tif",
-    r"F:\dasai\ESV(1.21)\栅格分区\生态涵养区.tif",
-    r"F:\dasai\ESV(1.21)\栅格分区\水生态保护区1.tif"
+    r"dasai\ESV(1.21)\栅格分区\矿山治理区.tif",
+    r"dasai\ESV(1.21)\栅格分区\生态涵养区.tif",
+    r"dasai\ESV(1.21)\栅格分区\水生态保护区1.tif"
 ]
 zone_names = ["矿山治理区", "生态涵养区", "水生态保护区"]
 

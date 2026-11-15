@@ -17,11 +17,11 @@ import geopandas as gpd
 from shapely.geometry import mapping
 
 # ==================== 路径配置 ====================
-RASTER_PATH = r"F:\gt\result\tudisy1.tif"              # 土地综合适宜性栅格
-COUNTY_SHP = r"D:\学习用\审图号：GS(2024)0650\quxian.shp"  # 全国区县矢量
-PROVINCE_SHP = r"F:\gt\shp\quyu.shp"                   # 7个省的省矢量
+RASTER_PATH = r"gt\result\tudisy1.tif"              # 土地综合适宜性栅格
+COUNTY_SHP = r"学习用\审图号：GS(2024)0650\quxian.shp"  # 全国区县矢量
+PROVINCE_SHP = r"gt\shp\quyu.shp"                   # 7个省的省矢量
 
-OUTPUT_DIR = r"F:\gt\result\分省"
+OUTPUT_DIR = r"gt\result\分省"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # 字段名配置

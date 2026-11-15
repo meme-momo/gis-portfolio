@@ -1,7 +1,7 @@
 import os
 
 # 目标文件夹路径
-folder_path = r"C:\Users\sang\Desktop\国地杯插图_2(1)\国地杯插图_2\线性图"
+folder_path = r"./本地路径\Desktop\国地杯插图_2(1)\国地杯插图_2\线性图"
 
 # 原始文件名 → 目标文件名 一一对应表
 rename_map = {

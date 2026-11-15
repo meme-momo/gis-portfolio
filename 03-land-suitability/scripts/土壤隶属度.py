@@ -3,12 +3,12 @@ import rasterio
 import os
 
 # 你的三个输出文件路径
-organic_path = r"F:\gt\processed_soil_data\clipped_organic_1km.tif"
-ph_path = r"F:\gt\processed_soil_data\clipped_ph_1km.tif"
-depth_path = r"F:\gt\processed_soil_data\clipped_depth_1km.tif"
+organic_path = r"gt\processed_soil_data\clipped_organic_1km.tif"
+ph_path = r"gt\processed_soil_data\clipped_ph_1km.tif"
+depth_path = r"gt\processed_soil_data\clipped_depth_1km.tif"
 
 # 输出路径（存放隶属度结果）
-output_dir = r"F:\gt\processed_soil_data"
+output_dir = r"gt\processed_soil_data"
 os.makedirs(output_dir, exist_ok=True)
 
 # ================== 隶属函数定义 ==================

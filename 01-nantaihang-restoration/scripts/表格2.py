@@ -8,12 +8,12 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 arcpy.env.overwriteOutput = True
 
 # 根目录
-root_folder = r"F:\dasai\南太行数据"
+root_folder = r"dasai\南太行数据"
 
 # 特殊功能区矢量指标路径（渔网矢量）
 special_vector_indicators = {
-    "地面沉降率": r"F:\dasai\南太行数据\矿山治理区\地面沉降率\渔网结果.shp",
-    "适生林地占比": r"F:\dasai\南太行数据\矿山治理区\适生林地占比\渔网结果.shp"
+    "地面沉降率": r"dasai\南太行数据\矿山治理区\地面沉降率\渔网结果.shp",
+    "适生林地占比": r"dasai\南太行数据\矿山治理区\适生林地占比\渔网结果.shp"
 }
 
 # 存储结果

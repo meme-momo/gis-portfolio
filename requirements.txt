@@ -13,3 +13,8 @@ shap>=0.44
 mgwr>=2.2
 libpysal>=4.9
 esda>=2.5
+
+# 07 实用脚本（图像处理与爬虫）
+requests>=2.31
+beautifulsoup4>=4.12
+pillow>=10.0

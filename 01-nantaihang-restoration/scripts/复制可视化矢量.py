@@ -6,8 +6,8 @@ import re
 from tqdm import tqdm
 
 # === 参数设置 ===
-root_folder = r"F:\dasai\南太行数据"  # 功能区总文件夹
-unified_folder = r"F:\dasai\南太行数据\统一可视化"  # 统一输出文件夹
+root_folder = r"dasai\南太行数据"  # 功能区总文件夹
+unified_folder = r"dasai\南太行数据\统一可视化"  # 统一输出文件夹
 os.makedirs(unified_folder, exist_ok=True)
 
 # 遍历功能区和指标

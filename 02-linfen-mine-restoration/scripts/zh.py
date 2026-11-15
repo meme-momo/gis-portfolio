@@ -29,8 +29,8 @@ def geojson_to_gdb_arcpy(geojson_path, gdb_path, feature_class_name=None):
         return None
 
 # 使用示例
-input_geojson = r"F:\linfen\patch\patch2.geojson"
-output_gdb = r"F:\linfen\patch\shp.gdb"
+input_geojson = r"linfen\patch\patch2.geojson"
+output_gdb = r"linfen\patch\shp.gdb"
 
 print("开始转换...")
 result = geojson_to_gdb_arcpy(input_geojson, output_gdb)

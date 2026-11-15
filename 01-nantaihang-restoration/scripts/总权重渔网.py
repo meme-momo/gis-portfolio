@@ -13,10 +13,10 @@ arcpy.env.overwriteOutput = True
 
 # ========== 配置参数 ==========
 # 全区渔网数据路径
-fishnet_path = r"F:\dasai\南太行渔网\fish1.shp"  # 请替换为实际路径
+fishnet_path = r"dasai\南太行渔网\fish1.shp"  # 请替换为实际路径
 
 # 全区栅格数据文件夹路径
-raster_folder = r"F:\dasai\南太行数据\总权重"  # 请替换为实际路径
+raster_folder = r"dasai\南太行数据\总权重"  # 请替换为实际路径
 
 # 输出矢量文件夹名称
 output_vector_folder = "矢量"

@@ -7,12 +7,12 @@ import os
 # ================== 配置 ==================
 
 # 三个综合适宜性图层
-climate_path = r"F:\gt\processed_climate_data\裁剪后\climate_combined_suitability.tif"
-soil_path = r"F:\gt\processed_soil_data\裁剪后\soil_combined_suitability.tif"
-terrain_path = r"F:\gt\processed_terrain_data\裁剪后\terrain_combined_suitability.tif"
+climate_path = r"gt\processed_climate_data\裁剪后\climate_combined_suitability.tif"
+soil_path = r"gt\processed_soil_data\裁剪后\soil_combined_suitability.tif"
+terrain_path = r"gt\processed_terrain_data\裁剪后\terrain_combined_suitability.tif"
 
 # 输出目录
-output_dir = r"F:\gt\processed_final"
+output_dir = r"gt\processed_final"
 os.makedirs(output_dir, exist_ok=True)
 
 # 目标分辨率（以气候图层为参考，也可以自己设）

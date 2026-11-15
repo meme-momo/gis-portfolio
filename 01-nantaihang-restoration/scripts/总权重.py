@@ -12,17 +12,17 @@ arcpy.env.overwriteOutput = True
 
 # ========== 配置参数 ==========
 # 基础路径
-base_dir = r"F:\dasai\南太行数据"
+base_dir = r"dasai\南太行数据"
 
 # 功能区列表
 functional_areas = ["矿山治理区", "生态涵养区", "水生态保护区"]
 
 # 标准栅格路径 - 请根据实际情况修改这些路径
 standard_rasters = {
-    "矿山治理区": r"F:\dasai\ESV(1.21)\栅格分区\矿山治理区.tif",
-    "生态涵养区": r"F:\dasai\ESV(1.21)\栅格分区\生态涵养区.tif", 
-    "水生态保护区": r"F:\dasai\ESV(1.21)\栅格分区\水生态保护区1.tif",
-    "总体": r"F:\dasai\ESV(1.21)\南太行CLCD\Reclass_tudi_2015.tif"
+    "矿山治理区": r"dasai\ESV(1.21)\栅格分区\矿山治理区.tif",
+    "生态涵养区": r"dasai\ESV(1.21)\栅格分区\生态涵养区.tif", 
+    "水生态保护区": r"dasai\ESV(1.21)\栅格分区\水生态保护区1.tif",
+    "总体": r"dasai\ESV(1.21)\南太行CLCD\Reclass_tudi_2015.tif"
 }
 
 # 输出目录

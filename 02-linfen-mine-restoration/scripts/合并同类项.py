@@ -104,7 +104,7 @@ def split_and_project_shp(input_fc, output_root):
 
 # ------------------- 执行 -------------------
 
-input_fc = r"F:\linfen\patch\shp.gdb\patch2"
-output_root = r"F:\linfen\patch\矿山子项目"
+input_fc = r"linfen\patch\shp.gdb\patch2"
+output_root = r"linfen\patch\矿山子项目"
 
 split_and_project_shp(input_fc, output_root)

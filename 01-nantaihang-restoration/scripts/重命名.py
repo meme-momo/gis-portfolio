@@ -4,7 +4,7 @@ import re
 import shutil
 
 # ✅ 顶层目录
-top_folder = r"F:\dasai\南太行数据"
+top_folder = r"dasai\南太行数据"
 
 # ✅ 匹配年份（4位数字）
 year_pattern = re.compile(r"(\d{4})")

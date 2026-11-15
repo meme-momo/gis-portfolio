@@ -7,8 +7,8 @@ from tqdm import tqdm
 
 # 特殊矢量指标路径
 special_vector_indicators = {
-    "地面沉降率": r"F:\dasai\南太行数据\矿山治理区\地面沉降率\渔网结果.shp",
-    "适生林地占比": r"F:\dasai\南太行数据\矿山治理区\适生林地占比\渔网结果.shp"
+    "地面沉降率": r"dasai\南太行数据\矿山治理区\地面沉降率\渔网结果.shp",
+    "适生林地占比": r"dasai\南太行数据\矿山治理区\适生林地占比\渔网结果.shp"
 }
 
 # 存储结果
@@ -35,7 +35,7 @@ for indicator, shp_path in tqdm(special_vector_indicators.items(), desc="处理�
         results[indicator][year] = avg_value
 
 # 输出 Excel
-excel_output = r"F:\dasai\南太行数据\特殊矢量指标平均值.xlsx"
+excel_output = r"dasai\南太行数据\特殊矢量指标平均值.xlsx"
 with pd.ExcelWriter(excel_output) as writer:
     for indicator, year_dict in results.items():
         df = pd.DataFrame([year_dict])

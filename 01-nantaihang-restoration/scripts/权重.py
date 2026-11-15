@@ -12,7 +12,7 @@ arcpy.CheckOutExtension("Spatial")
 arcpy.env.overwriteOutput = True
 
 # ========= 参数 =========
-root_folder = r"F:\dasai\南太行数据"
+root_folder = r"dasai\南太行数据"
 
 # 新权重表（不包含特殊指标）
 indicators = {

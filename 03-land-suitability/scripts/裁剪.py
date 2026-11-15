@@ -7,14 +7,14 @@ import geopandas as gpd
 # ================== 配置 ==================
 
 # 要裁剪的栅格文件夹（里面放所有待裁剪的tif）
-input_folder = r"F:\gt\processed_climate_data"
+input_folder = r"gt\processed_climate_data"
 
 # 输出文件夹（裁剪后的结果放这里）
-output_folder = r"F:\gt\processed_climate_data\裁剪后"
+output_folder = r"gt\processed_climate_data\裁剪后"
 os.makedirs(output_folder, exist_ok=True)
 
 # 矢量边界
-vector_path = r"F:\gt\shp\quyu.shp"
+vector_path = r"gt\shp\quyu.shp"
 
 # ================== 主程序 ==================
 

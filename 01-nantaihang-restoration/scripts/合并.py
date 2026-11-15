@@ -4,9 +4,9 @@ import shutil
 import importlib.util
 
 # ================== 参数设置 ==================
-root_folder = r"F:\dasai\南太行数据"
+root_folder = r"dasai\南太行数据"
 exclude_folder = "适生林地占比"  # 不动
-overall_raster = r"F:\dasai\ESV(1.21)\南太行CLCD\Reclass_tudi_2013.tif"  # 整体区域栅格
+overall_raster = r"dasai\ESV(1.21)\南太行CLCD\Reclass_tudi_2013.tif"  # 整体区域栅格
 
 arcpy.env.overwriteOutput = True
 

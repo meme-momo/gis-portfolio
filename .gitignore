@@ -47,6 +47,12 @@ venv/
 .ipynb_checkpoints/
 .pytest_cache/
 
+# ---------- Node ----------
+node_modules/
+dist/
+.npm/
+*.log
+
 # ---------- R ----------
 .Rhistory
 .Rproj.user/

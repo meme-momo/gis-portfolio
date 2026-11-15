@@ -10,7 +10,7 @@ from openpyxl.styles import Font, Alignment, Border, Side, PatternFill
 from openpyxl.utils import get_column_letter
 
 # ==================== 配置 ====================
-OUTPUT_DIR = r"F:\gt\result\分省"
+OUTPUT_DIR = r"gt\result\分省"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # 浮动比例（±8%，可调整）

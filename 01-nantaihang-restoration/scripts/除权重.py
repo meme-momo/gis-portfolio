@@ -7,9 +7,9 @@ import traceback
 arcpy.CheckOutExtension("Spatial")
 
 # === 你需要修改这几个路径 ===
-input_folder = r"F:\dasai\南太行数据\生态涵养区\FVC"           # 原始栅格文件夹
-output_folder = r"F:\dasai\南太行数据\生态涵养区\FVC\新建文件夹"     # 输出文件夹
-mask_raster = r"F:\dasai\ESV(1.21)\栅格分区\生态涵养区.tif"  # 参考栅格，用于保持范围和掩膜一致
+input_folder = r"dasai\南太行数据\生态涵养区\FVC"           # 原始栅格文件夹
+output_folder = r"dasai\南太行数据\生态涵养区\FVC\新建文件夹"     # 输出文件夹
+mask_raster = r"dasai\ESV(1.21)\栅格分区\生态涵养区.tif"  # 参考栅格，用于保持范围和掩膜一致
 
 # 权重数值（所有像元除以这个值）
 weight_value = 0.073071 

@@ -61,7 +61,7 @@ target_res = None   # None = 沿用气候图层分辨率；也可指定 1000 表
 pip install rasterio geopandas numpy pandas openpyxl matplotlib
 ```
 
-无需 ArcGIS。脚本顶部路径形如 `F:\gt\...`，运行前改成自己的目录结构。
+无需 ArcGIS。脚本顶部路径形如 `gt\...`，运行前改成自己的目录结构。
 
 ## 数据说明
 

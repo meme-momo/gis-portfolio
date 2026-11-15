@@ -7,9 +7,9 @@ import shutil
 
 # ================== 配置参数 ==================
 
-dem_path = r"F:\gt\DEM_WGS84_90m.tif"
-vector_path = r"F:\gt\shp\quyu.shp"
-output_dir = r"F:\gt\processed_terrain_data"
+dem_path = r"gt\DEM_WGS84_90m.tif"
+vector_path = r"gt\shp\quyu.shp"
+output_dir = r"gt\processed_terrain_data"
 os.makedirs(output_dir, exist_ok=True)
 
 NODATA_VALUE = -9999

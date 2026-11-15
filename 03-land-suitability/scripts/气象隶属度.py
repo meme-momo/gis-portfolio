@@ -8,13 +8,13 @@ from glob import glob
 # ================== 配置参数 ==================
 
 # 气象数据文件夹（2000-2020年，每年一个tif，每个tif有6个波段）
-climate_dir = r"F:\gt\Camellia_Climat\Camellia_Climate"
+climate_dir = r"gt\Camellia_Climat\Camellia_Climate"
 
 # 矢量边界路径
-vector_path = r"F:\gt\shp\quyu.shp"
+vector_path = r"gt\shp\quyu.shp"
 
 # 输出文件夹
-output_dir = r"F:\gt\processed_climate_data"
+output_dir = r"gt\processed_climate_data"
 os.makedirs(output_dir, exist_ok=True)
 
 # 6个波段对应的因子名称（按波段顺序）
