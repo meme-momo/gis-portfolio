@@ -14,18 +14,18 @@
 ```
 02-linfen-mine-restoration/
 ├── scripts/
-│   ├── zh.py                GeoJSON → 文件地理数据库要素类
-│   ├── 合并同类项.py        按属性合并图斑，并生成合法 shp 文件名
-│   ├── 矢量处理-2.ipynb     按县名统计图斑面积与指标（ArcPy）
-│   └── 问卷出图.py          公众参与问卷结果统计图
+│   ├── 01_GeoJSON转地理数据库.py   外部 GeoJSON → 地理数据库要素类
+│   ├── 02_按属性合并图斑.py        跨县图斑字段归一后合并
+│   ├── 03_按县统计图斑面积.ipynb   分县汇总面积、图斑数、修复类型
+│   └── 04_问卷结果可视化.py        公众参与问卷统计图
 └── README.md
 ```
 
-### zh.py — 格式转换
+### 01_GeoJSON转地理数据库.py — 格式转换
 
 外部提供的数据常是 GeoJSON，ArcGIS 工作流更适合文件地理数据库（`.gdb`）。脚本封装了 GeoJSON → Feature Class 的转换，并处理字段名截断（shapefile 字段名 10 字符限制）与中文编码问题。
 
-### 合并同类项.py — 图斑归并
+### 02_按属性合并图斑.py — 图斑归并
 
 不同县、不同批次交上来的图斑字段名不统一（有的叫「县名」，有的叫「所属县区」），需要先归一再合并。脚本做了两件事：
 
@@ -39,18 +39,18 @@ def clean_filename_for_shp(name, prefix="m_"):
     ...
 ```
 
-### 矢量处理-2.ipynb — 分县统计
+### 03_按县统计图斑面积.ipynb — 分县统计
 
 核心是把图斑按县汇总：读取「临汾市投影.shp」的属性表，确认代表县名的字段（不同来源字段名不同，脚本顶部有专门提示），再分组统计面积、图斑数、按修复类型分类汇总。输出表格直接进方案书。
 
-### 问卷出图.py — 公众参与可视化
+### 04_问卷结果可视化.py — 公众参与可视化
 
 示范工程要求公众参与，问卷回收后要出统计图。这个脚本解决的是一个很实际的问题：**Matplotlib 中文乱码**。用多级字体回退（`SimHei` → `Microsoft YaHei` → `Arial Unicode MS` → `PingFang SC`）兼容 Windows / macOS。
 
 ## 运行环境
 
-- **ArcGIS Pro Python 3.11**（`zh.py`、`合并同类项.py`、`矢量处理-2.ipynb` 需要 `arcpy`）
-- `问卷出图.py` 只需 `matplotlib` + `numpy`
+- **ArcGIS Pro Python 3.11**（01、02、03 需要 `arcpy`）
+- `04_问卷结果可视化.py` 只需 `matplotlib` + `numpy`
 
 ## 数据说明
 
