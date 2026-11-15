@@ -75,6 +75,23 @@
 
 `model_candidate_results.csv` 记录了超参数搜索过程（n_estimators、learning_rate、max_depth、正则项等），按验证集 RMSE 自动选优——避免手调参数带来的乐观偏差。
 
+## 结果：图表
+
+脚本自动输出的图（已压缩，原图在 `mgwr/output/` 与 `shap/` 下）：
+
+| 图 | 内容 |
+|---|---|
+| ![q值](mgwr/figures/fig1_地理探测器q值.png) | 7 个因子的地理探测器 q 值排序：普惠金融 0.410、人均GDP 0.409、产业高级化 0.402 三者并列 |
+| ![交互探测](mgwr/figures/fig2_交互探测热力图.png) | 因子两两交互探测矩阵，区分双因子增强与非线性增强 |
+| ![模型精度](mgwr/figures/fig3_模型精度对比.png) | 7 个模型的训练 R² 与 LOOCV R² 对比，直观暴露 SVR-RBF 的过拟合 |
+| ![局部系数](mgwr/figures/fig4_局部系数热力图.png) | 各城市各变量的 MGWR 局部系数热力图，展示空间非平稳性 |
+| ![残差](mgwr/figures/fig5_残差空间分布.png) | MGWR 残差空间分布，检验模型是否已消除空间自相关 |
+| ![特征重要性](shap/figures/fig1_特征重要性.png) | SHAP 特征重要性排序，与地理探测器 q 值互为印证 |
+| ![蜂群图](shap/figures/fig2_shap蜂群图.png) | SHAP 蜂群图：因子取值高低对目标变量的正负向影响 |
+| ![依赖关系](shap/figures/fig3_依赖关系.png) | 核心特征的 SHAP 依赖关系，呈现非线性响应曲线 |
+
+> 小瑕疵：`模型精度对比` 图例里「训练R²」出现两次（浅色条与蓝点各一个），是原脚本 `plt.legend` 传参重复所致，不影响读图，保留原样未改。
+
 ## 目录与脚本
 
 ```

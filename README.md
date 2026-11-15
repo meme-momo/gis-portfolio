@@ -34,6 +34,14 @@
 桌面 GIS（05 AsiaGIS：C# 自绘矢量地图）
 ```
 
+## 成果预览
+
+| 01 · 南太行研究区与治理分区 | 04 · 7 个模型精度对比（LOOCV） |
+|---|---|
+| ![研究区区位](01-nantaihang-restoration/figures/fig1_研究区区位示意.jpg) | ![模型精度对比](04-mgwr-shap/mgwr/figures/fig3_模型精度对比.png) |
+
+更多成果图见各项目 README：01 有 6 张专题图（区位、治理分区，以及土地利用 / 生态系统服务 / 碳储量 / 矿山修复的演变组图），04 有 8 张分析图（q 值、交互探测、局部系数热力图、残差、SHAP 系列）。
+
 ## 技术栈
 
 | 类别 | 工具 |
@@ -54,10 +62,10 @@
 │   ├── scripts/     ArcPy 空间统计脚本（渔网统计、权重计算、矢量分类）
 │   ├── weights/     指标权重计算（Notebook）
 │   ├── analysis/    InVEST 三类生态系统服务评估（Notebook）
-│   └── figures/     出图脚本（批量导出、规范命名、柱状图）
+│   └── figures/     成果图 + 出图脚本（批量导出、规范命名、柱状图）
 ├── 02-linfen-mine-restoration/scripts/
 ├── 03-land-suitability/scripts/
-├── 04-mgwr-shap/{mgwr,shap}/
+├── 04-mgwr-shap/{mgwr,shap}/ 含 figures/ 成果图
 ├── 05-asiagis-desktop/      C# 源码（不含 bin/obj）
 ├── 06-arcgis-coursework/    实验报告
 ├── 07-python-toolbox/       Python 小工具（爬虫、图像批处理、文件管理）
