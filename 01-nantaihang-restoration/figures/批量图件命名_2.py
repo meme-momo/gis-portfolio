@@ -1,7 +1,7 @@
 import os
 
 # 目标文件夹路径（Windows路径用r开头避免转义）
-folder_path = r"./本地路径\Desktop\国地杯插图_2(1)\国地杯插图_2\地图"
+folder_path = r"./data/插图/地图"
 
 # 原始文件名 → 目标文件名 一一对应表（完全匹配截图顺序）
 rename_map = {

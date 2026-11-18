@@ -3,8 +3,8 @@ import os
 import shutil
 
 # -------------------------- 在这里修改配置 --------------------------
-INPUT_FOLDER = r"./本地路径\Desktop\国地杯插图_2(1)\国地杯插图_2\线性图"   # 原始图片文件夹
-OUTPUT_FOLDER = r"./本地路径\Desktop\国地杯插图_2(1)\国地杯插图_2\dpi"  # 处理后图片输出文件夹
+INPUT_FOLDER = r"./data/插图/线性图"   # 原始图片文件夹
+OUTPUT_FOLDER = r"./data/插图/dpi"  # 处理后图片输出文件夹
 TARGET_DPI = (600, 600)                       # 目标DPI（水平, 垂直）
 SUPPORTED_FORMATS = ('.png', '.jpg', '.jpeg', '.JPG', '.PNG', '.JPEG')
 # -------------------------------------------------------------------

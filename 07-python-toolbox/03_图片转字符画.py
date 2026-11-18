@@ -3,8 +3,8 @@ import os
 from PIL import Image
 
 # ============ 手动配置部分 ============
-IMAGE_PATH = r"./本地路径/图片.jpg"  # 图片路径
-OUTPUT_DIR = r"./本地路径"   # 输出文件夹
+IMAGE_PATH = r"./input/图片.jpg"  # 图片路径
+OUTPUT_DIR = r"./output"   # 输出文件夹
 OUTPUT_FILE = "ascii_art.txt"                      # 输出文件名
 WIDTH = 60                                         # 字符画宽度
 CHARS = "@#$%&*?/|()1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[]{};:<>,./"

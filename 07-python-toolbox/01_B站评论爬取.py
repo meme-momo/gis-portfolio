@@ -7,7 +7,7 @@ from pathlib import Path
 
 # 配置
 DYNAMIC_ID = "1127669871517106193"
-OUTPUT_DIR = Path(r"./本地路径\Desktop\MyProject2")
+OUTPUT_DIR = Path(r"./output/MyProject2")
 OUTPUT_FILE = OUTPUT_DIR / "bilibili_comments.txt"
 KEYWORDS_FILE = OUTPUT_DIR / "top_keywords.txt"
 SENSITIVE_WORDS_FILE = OUTPUT_DIR / "sensitive_words.txt"
