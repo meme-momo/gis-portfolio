@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/index.js" type="module" defer></script>
+</head>
+<body>
+    <div>
+        <button id="testDrawTriangle">画三角</button>
+        <button id="DDADrawLine">DDA画直线</button>
+        <button id="midPointDrawLine">中点画直线</button>
+        <button id="bresenhamDrawLine">Bresenham画直线</button>
+    </div>
+    
+    <div>
+        <canvas id="glcanvas" width="640" height="480">
+        你的浏览器似乎不支持或者禁用了 HTML5 <code>&lt;canvas&gt;</code> 元素。
+        </canvas>
+    </div>
+    
+</body>
+<script type="module">
+    import {testAngle,dda,midpointLine,bresenhamLine} from './js/myCGApi.js'
+    
+    document.getElementById('testDrawTriangle').onclick = function() {
+        testAngle()
+    }
+    document.getElementById('DDADrawLine').onclick = function() {
+        dda(800,100,400,300)
+    }
+    document.getElementById('midPointDrawLine').onclick = function() {
+        midpointLine(600,50,100,350)
+    }
+    document.getElementById('bresenhamDrawLine').onclick = function() {
+        bresenhamLine(200,18,100,100)
+    }
+</script>
+</html>
